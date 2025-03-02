@@ -39,9 +39,8 @@ def extract_text_from_pdf(uploaded_file):
 
 input_prompt = """
 You are an advanced AI-powered ATS (Applicant Tracking System).
-Analyze the resume against the job description and return ONLY JSON format.
 
-JSON OUTPUT FORMAT:
+OUTPUT FORMAT:
 {{
     "JD Match": "X%",
     "MissingKeywords": ["keyword1", "keyword2"],
@@ -57,7 +56,6 @@ Job Description:
 
 # Function to Format & Display AI Response
 def format_ai_response(response_text):
-    """ Extracts key details from AI response and formats them neatly. """
     try:
         result = json.loads(response_text)
     except json.JSONDecodeError:
