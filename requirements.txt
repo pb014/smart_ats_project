@@ -1,0 +1,11 @@
+streamlit
+PyPDF2
+google.generativeai
+python-dotenv
+openai>=1.0.0
+requests
+streamlit
+PyPDF2
+langchain
+langchain_groq
+python-dotenv
